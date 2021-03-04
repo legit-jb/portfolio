@@ -2,6 +2,7 @@
     --jblack: #0a0a0f;
     --jwhite: #f0f0f5;
     --jgray: #a3a3a3;
+    --jdarkgray: #5c5c5c;
     --marg: 1%;
     --pheight: 200px;
 }
@@ -58,7 +59,9 @@ nav a {
 } 
 
 .hero-image button {
-    border: none;
+    border: solid;
+    border-color: var(--jgray);
+    border-width: 1px;
     display: inline-block;
     padding: 10px 25px;
     color: var(--jblack);
@@ -75,8 +78,6 @@ nav a {
     background-color: var(--jblack);
     color: var(--jwhite);
 }
-
-
 
 main {
     background-color:var(--jwhite);
@@ -117,10 +118,27 @@ main section {
 .project {
     margin: 1%;
     outline-style: solid;
-    outline-color: var(--jblack);
+    outline-color: var(--jdarkgray);
     width: 48%;
     height: var(--pheight);
     background-color: var(--jgray);
+}
+
+
+figcaption {
+    border: solid;
+    border-color: var(--jdarkgray);
+    border-width: 1px;
+    display: inline-block;
+    padding: 10px 25px;
+    color: var(--jblack);
+    background-color: var(--jwhite);
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 75%;
+    right: 0;
+    height: 16px;
 }
 
 #latestproject {
