@@ -1,3 +1,9 @@
+:root {
+    --jblack: #0a0a0f;
+    --jwhite: #f0f0f5;
+    --marg: 1%;
+}
+
 /*
 *****Elements*****
 */
@@ -7,8 +13,8 @@ body {
     background-color: white;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
-    color: #0a0a0f;
-    margin: 1%;
+    color: var(--jblack);
+    margin: 3%;
 }
 
 h1 {
@@ -23,17 +29,33 @@ h3 {
     font-size: 125%;
 }
 
-a {
-    color: #f0f0f5;
-}
-header {
-    background-color: #0a0a0f;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.jheader {
+    background-color: var(--jblack);
+    padding-top: 1%;
+    padding-bottom: 1%;
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
+}
+
+.jheader h1 {
+    padding: 1%;
+    padding-left: 5%;
+    background-color:var(--jwhite);
+}
+
+nav {
+    width: 300px;
+}
+
+nav li {
+    display: inline-block;
+    margin: var(--marg);
+}
+
+nav a {
+    color: var(--jwhite);
 }
 
 .hero {
@@ -41,63 +63,60 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/benchbackground.png");
     background-position: center;
     background-size: cover;
-}
-li {
-    margin: 5px;
-}
+} 
 
 main {
-    background-color:#f0f0f5;
+    background-color:var(--jwhite);
     border-style: solid;
     border-width: 1px;
     border-color: #e0e0eb;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
+main header {
+    width: 25%;
+    text-align: end;
+}
+
+main section {
+    width: 75%;
+}
+
+/*
 p {
     margin:2%;
 }
 
 footer {
     text-align: center;
-}
+} */
 
-body header {
-    display: flex;
-    justify-content: space-between;
-}
-
-body header h1 {
-    padding: .5%;
-    padding-left: 5%;
-    background-color:#f0f0f5;
-    text-shadow: .5px .5px 1f1f2e;
-}
-
-body header nav {
-    padding-right: 5%;
-}
-
-body header nav ul {
-    display: flex;
-}
-
-main section {
-    margin:1%;
+/* main section {
+    margin: var(--marg);
     margin-top: 1.5%;
     margin-bottom: 1.5%;
     display: flex;
-}
+} */
 
-body main section h2 {
-    /* max growth 145 px to line up with J Brennan in header */
+/* body main section h2 {
     padding: .5%;
     width: 20%;
     border-right: solid;
     border-width: 2px;
-    border-color: #0a0a0f;
+    border-color: var(--jblack);
     display: flex;
     justify-content: flex-end;
     text-align: end;
-}
+} */
+
+/* ******ID's***** */
+
+/* #work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+} */
+
+/* ******Classes****** */
