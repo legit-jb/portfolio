@@ -3,7 +3,6 @@
     --jwhite: #f0f0f5;
     --jgray: #a3a3a3;
     --jdarkgray: #5c5c5c;
-    --marg: 1%;
     --pheight: 200px;
 }
 
@@ -21,7 +20,7 @@ h1 {
 
 h2 {
     font-size: 200%;
-    margin: var(--marg);
+    margin: 1%;
 }
 
 .jheader {
@@ -90,7 +89,7 @@ main {
 }
 
 main header {
-    margin: var(--marg);
+    margin: 1%;
     padding: 1%;
     word-spacing: 169px;
     text-align: end;
