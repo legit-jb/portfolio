@@ -1,13 +1,10 @@
 :root {
     --jblack: #0a0a0f;
     --jwhite: #f0f0f5;
+    --jgray: #a3a3a3;
     --marg: 1%;
+    --pheight: 200px;
 }
-
-/*
-*****Elements*****
-*/
-
 
 body {
     background-color: white;
@@ -15,9 +12,6 @@ body {
     font-size: 16px;
     color: var(--jblack);
     margin: 3%;
-    /* display: flex;
-    flex-direction: column; */
-
 }
 
 h1 {
@@ -27,10 +21,6 @@ h1 {
 h2 {
     font-size: 200%;
     margin: var(--marg);
-}
-
-h3 {
-    font-size: 125%;
 }
 
 .jheader {
@@ -52,6 +42,7 @@ h3 {
 nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     padding: 3%;
 }
 
@@ -71,6 +62,7 @@ main {
     border-style: solid;
     border-width: 1px;
     border-color: #e0e0eb;
+    padding-right: 5%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -78,54 +70,62 @@ main {
 main header {
     margin: var(--marg);
     padding: 1%;
+    word-spacing: 169px;
     text-align: end;
     border-right-color: var(--jblack);
     border-right-style: solid;
     border-right-width: 2px;
     flex: 0 0 169px;
-    overflow: auto;
 }
 
 main section {
     padding: 1%;
     flex:1 0 70%;
-    overflow: auto;
 }
 
-/*
-p {
-    margin:2%;
+#aboutme {
+    margin: 1%;
+}
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    margin: 1%;
+    outline-style: solid;
+    outline-color: var(--jblack);
+    width: 48%;
+    height: var(--pheight);
+    background-color: var(--jgray);
+}
+
+#latestproject {
+    width: 100%;
+    height: calc(2 * var(--pheight));
+}
+
+#contactme { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contactme > * {
+    color: var(--jblack);
+    text-decoration: underline;
 }
 
 footer {
+    background-color: var(--jblack);
     text-align: center;
-} */
+    margin-top: 1%;
+    padding: 1%;
+    padding-top: 2%;
+}
 
-/* main section {
-    margin: var(--marg);
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
-    display: flex;
-} */
-
-/* body main section h2 {
-    padding: .5%;
-    width: 20%;
-    border-right: solid;
-    border-width: 2px;
-    border-color: var(--jblack);
-    display: flex;
-    justify-content: flex-end;
-    text-align: end;
-} */
-
-/* ******ID's***** */
-
-/* #work {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-} */
-
-/* ******Classes****** */
+footer p {
+    color: var(--jwhite);
+}
