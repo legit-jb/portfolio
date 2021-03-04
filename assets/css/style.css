@@ -50,12 +50,33 @@ nav a {
     color: var(--jwhite);
 }
 
-.hero {
+.hero-image {
     height: 250px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/benchbackground.png");
     background-position: center;
     background-size: cover;
 } 
+
+.hero-image button {
+    border: none;
+    display: inline-block;
+    padding: 10px 25px;
+    color: var(--jblack);
+    background-color: var(--jwhite);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+  }
+
+.hero-image button:hover {
+    background-color: var(--jblack);
+    color: var(--jwhite);
+}
+
+
 
 main {
     background-color:var(--jwhite);
