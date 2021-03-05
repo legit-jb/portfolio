@@ -69,7 +69,7 @@ nav a {
     text-align: center;
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 37%;
     right: 10%;
   }
 
@@ -78,30 +78,39 @@ nav a {
     color: var(--jwhite);
 }
 
+.hero-image button:active {
+    background-color: var(--jdarkgray);
+    box-shadow: 0 1px var(--jgray);
+    transform: translateY(1px);
+}
+
 main {
     background-color:var(--jwhite);
     border-style: solid;
     border-width: 1px;
     border-color: #e0e0eb;
-    padding-right: 5%;
+    /* padding-right: 5%; */
     display: flex;
     flex-wrap: wrap;
 }
 
 main header {
-    margin: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     padding: 1%;
-    word-spacing: 169px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    word-spacing: 130px;
     text-align: end;
     border-right-color: var(--jblack);
     border-right-style: solid;
     border-right-width: 2px;
-    flex: 0 0 169px;
+    flex: 0 0 130px;
 }
 
 main section {
     padding: 1%;
-    flex:1 0 70%;
+    flex:1 0 80%;
 }
 
 #aboutme {
