@@ -11,7 +11,6 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: var(--jblack);
-    margin: 3%;
 }
 
 h1 {
@@ -89,7 +88,8 @@ main {
     border-style: solid;
     border-width: 1px;
     border-color: #e0e0eb;
-    /* padding-right: 5%; */
+    margin-right: 1%;
+    margin-left: 1%;
     display: flex;
     flex-wrap: wrap;
 }
