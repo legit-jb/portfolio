@@ -1,92 +1,102 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>J Brennan's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/skeleton.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>J Brennan Full Stack Developer</title>
 </head>
 
+<section class=header>
+<div class="container" id="aboutme">
+  <h1 class="display-3">J Brennan</h1>
+  <p class="title">Full Stack Developer</p>
+
+</div>
+</section>
+
+
+
 <body>
-    <header class="jheader">
-        <h1>J Brennan</h1>
-        <nav>
-            <li>
-                <a href="#aboutme">About Me</a>
-            </li>
-            <li>
-                <a href="#work">Work</a>
-            </li>
-            <li>
-                <a href="#contactme">Contact Me</a>
-            </li>
-            <li>
-                <a href="#resume">Resume</a>
-            </li>
-        </nav>
-    </header>
-
-    <div class="hero-image"></divclass>
-        <button>HIRE THIS MAN!!!</button>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-list">
+        <li class="navbar-item">
+          <a class="navbar-link" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#">Resume</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#">LinkedIn</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#contactMe">contact me</a>
+        </li>
+      </div>
     </div>
+  </nav>
 
-    <main>
-        <header>
-                <h2>About Me</h2>
-        </header>
-        <section id="aboutme">
-            <p>
-                J Brennan is a hard-hitting dynamic go getter. After reading this, you will scream to your HR Rep, "HIRE THIS MAN!!!"
-            </p>
-        </Section>
-        
-        <!--  will update this section with apps as they are comleted   -->
-        <header>
-            <h2>Work</h2>
-        </header>
-        <section id="work">
-                <figure class="project" id="latestproject">
-                    <figcaption>latest project</figcaption>
-                </figure>
-                <figure class="project" id=project1>
-                    <figcaption>project 1</figcaption>
-                </figure>
-                <figure class="project" id=project2>
-                    <figcaption>project 2</figcaption>
-                </figure>
-                <figure class="project" id=project3>
-                    <figcaption>project 3</figcaption>
-                </figure>
-                <figure class="project" id=project4>
-                    <figcaption>project 4</figcaption>
-                </figure>
-        </Section>
-        <header>
-            <h2>Contact Me</h2>
-        </header>
+  
+  <!-- Projects -->
+  <div class="container" id="projectContainer">
 
-        <!--  will update with linked in and usable contact information   -->
-        <section id="contactme">
-            <p>
-                J Brennan @ me com
-            </p>
-            <p>
-                555-555-5555
-            </p>
-            <a href=www.twitter.com>twitter</a>
-            <a href="wwww.duckduckgo.com">duckduckgo</a>
-        </section>
-        <header>
-            <h2>Resume</h2>
-        </header>
-        <section id="resume">
+    <div class="row">
 
-        </section>
-    </main>
-    <footer>
-        <p>Artisinally hand crafted by J Brennan</p>
-    </footer>
+      <div class="twelve columns">
+        <div class="card-body">
+          This is some text within a card body.
+        </div>
+      </div>
+
+      <div class="six columns">
+        <div class="card-body">
+          This is some text within a card body.
+        </div>
+      </div>
+
+      <div class="six columns">
+        <div class="card-body">
+          This is some text within a card body.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- contact me -->
+
+  <div class="container" id="contactMe">
+    <form>
+      <div class="row">
+        <div class="six columns">
+          <label for="exampleEmailInput">Your email</label>
+          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+        </div>
+        <div class="six columns">
+          <label for="exampleRecipientInput">Reason for contacting</label>
+          <select class="u-full-width" id="exampleRecipientInput">
+            <option value="Option 1">Questions</option>
+            <option value="Option 2">Admiration</option>
+            <option value="Option 3">Can I get your number?</option>
+          </select>
+        </div>
+      </div>
+      <label for="exampleMessage">Message</label>
+      <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+      <label class="example-send-yourself-copy">
+        <input type="checkbox">
+        <span class="label-body">Send a copy to yourself</span>
+      </label>
+      <input class="button-primary" type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

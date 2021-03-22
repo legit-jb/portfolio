@@ -1,173 +1,88 @@
 :root {
-    --jblack: #0a0a0f;
-    --jwhite: #f0f0f5;
-    --jgray: #a3a3a3;
-    --jdarkgray: #5c5c5c;
-    --pheight: 200px;
+  --jblack: #1e1d20;
+  --jdarkgray: #333333;
+  --jgray: #d6d6d6;
+  --jblue: #0571e3;
+  --jdarkblue: #01448b;
+  --jdarkred: #bb8482;
+  --jdarkgreen: #91bd83;
+  --jdarkyellow: #b0ba53;
+  --jwhite: #fbfbfd;
+  --joffwhite: #f5f5f7;
+  font-family: helvetica, Arial, sans-serif;
 }
 
 body {
-    background-color: white;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    color: var(--jblack);
+  color: var(--jdarkgray);
+  font-size: 16px;
+  line-height: 1;
+  font-family: helvetica, Arial, sans-serif;
 }
 
-h1 {
-    font-size: 225%;
+.header {
+  margin-top: 6rem;
+  text-align: center;
+  background-image:url("/assets/images/treeAbstract.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-h2 {
-    font-size: 200%;
-    margin: 1%;
+.has-docked-nav {
+  display: block;
 }
 
-.jheader {
-    background-color: var(--jblack);
-    padding-top: 1%;
-    padding-bottom: 1%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  display: block;
+  width: 100%;
+  height: 6.5rem;
+  z-index: 99;
+  background-color: var(--jblack);
+  list-style: none;
+  font-family: helvetica, Arial, sans-serif;
 }
 
-.jheader h1 {
-    padding: 1%;
-    padding-left: 5%;
-    background-color:var(--jwhite);
+.navbar-list {
+  list-style: none;
+  margin-bottom: 0;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 3%;
+.navbar-item {
+  position: relative;
+  float: left;
+  margin-bottom: 0;
 }
 
-nav a {
-    color: var(--jwhite);
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  margin-right: 35px;
+  text-decoration: none;
+  line-height: 6.5rem;
 }
 
-.hero-image {
-    height: 250px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/benchbackground.png");
-    background-position: center;
-    background-size: cover;
-} 
-
-.hero-image button {
-    border: solid;
-    border-color: var(--jgray);
-    border-width: 1px;
-    display: inline-block;
-    padding: 10px 25px;
-    color: var(--jblack);
-    background-color: var(--jwhite);
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-    top: 37%;
-    right: 10%;
-  }
-
-.hero-image button:hover {
-    background-color: var(--jblack);
-    color: var(--jwhite);
+.has-docked-nav .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.hero-image button:active {
-    background-color: var(--jdarkgray);
-    box-shadow: 0 1px var(--jgray);
-    transform: translateY(1px);
+.navbar a {
+  color: var(--joffwhite);
 }
 
-main {
-    background-color:var(--jwhite);
-    border-style: solid;
-    border-width: 1px;
-    border-color: #e0e0eb;
-    margin-right: 1%;
-    margin-left: 1%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main header {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding: 1%;
-    word-spacing: 130px;
-    text-align: end;
-    border-right-color: var(--jblack);
-    border-right-style: solid;
-    border-right-width: 2px;
-    flex: 0 0 130px;
-}
-
-main section {
-    padding: 1%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    flex:1 0 80%;
-}
-
-#work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.project {
-    margin: 1%;
-    outline-style: solid;
-    outline-color: var(--jdarkgray);
-    width: 48%;
-    height: var(--pheight);
-    background-color: var(--jgray);
+.container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  max-width: 800px;
 }
 
 
-figcaption {
-    border: solid;
-    border-color: var(--jdarkgray);
-    border-width: 1px;
-    display: inline-block;
-    padding: 10px 25px;
-    color: var(--jblack);
-    background-color: var(--jwhite);
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    top: 75%;
-    right: 0;
-    height: 16px;
-}
-
-#latestproject {
-    width: 100%;
-    height: calc(2 * var(--pheight));
-}
-
-#contactme { 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#contactme > * {
-    color: var(--jblack);
-    text-decoration: underline;
-}
-
-footer {
-    background-color: var(--jblack);
-    text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-footer p {
-    color: var(--jwhite);
+.card-body {
+  background-color: var(--joffwhite);
+  border: 1px var(--jgray) solid;
+  /* border-radius: 25px; */
 }
