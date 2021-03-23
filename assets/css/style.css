@@ -22,7 +22,7 @@ body {
 .header {
   margin-top: 6rem;
   text-align: center;
-  background-image:url("/assets/images/treeAbstract.jpeg");
+  background-image:url("./assets/images/treeAbstract.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -80,6 +80,16 @@ body {
   max-width: 800px;
 }
 
+.project {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+#projectRow {
+  display:flex;
+
+  justify-content: space-between;
+}
 
 .card-body {
   background-color: var(--joffwhite);
