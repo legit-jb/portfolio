@@ -5,97 +5,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="./assets/css/normalize.css">
-  <link rel="stylesheet" href="./assets/css/skeleton.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>J Brennan Full Stack Developer</title>
 </head>
 
-<section class=header>
-<div class="container" id="aboutme">
-  <h1 class="display-3">J Brennan</h1>
-  <p class="title">Full Stack Developer</p>
-
-</div>
-</section>
-
-
-
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="navbar-list">
-        <li class="navbar-item">
-          <a class="navbar-link" aria-current="page" href="#home">Home</a>
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link" href="#">Resume</a>
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link" href="#">LinkedIn</a>
-        </li>
-        <li class="navbar-item">
-          <a class="navbar-link" href="#contactMe">contact me</a>
-        </li>
-      </div>
-    </div>
-  </nav>
+
+  <header id="about">  
+      <h1>J Brennan</h1>
+      <span>Full Stack Developer</span>
+  </header>
+
 
   
+    <div class="navbar" id="myNav">
+      <a href="#logo">JB</a>
+      <a href="#home" class="active">home</a>
+      <a href="#about">about</a>
+      <a href="#project">projects</a>
+      <a href="#resume">resume</a>
+      <a href="#contact">contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="collapseNav()">
+        <i class="fa fa-bars"></i>
+      </div>
+
+  <div class="content">
   <!-- Projects -->
-  <div class="container" id="projectContainer">
 
-    <div class="row" id="projectRow">
+  <section id="projects">
 
-      <div class="twelve columns project">
-        <div class="card-body">
-          This is some text within a card body.
-        </div>
-      </div>
-
-      <div class="six columns project">
-        <div class="card-body">
-          This is some text within a card body.
-        </div>
-      </div>
-
-      <div class="six columns project">
-        <div class="card-body">
-          This is some text within a card body.
-        </div>
-      </div>
-
+    <header>
+      <h1>projects</h1>
+    </header>
+    <div class="project" id="proj1">
+      <img class="projectImg" src="./assets/images/dayScheduler.png"  href="https://legit-jb.github.io/provisions/"alt="day planner" width="200" height="200">
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+        This content is a little bit longer.</p>
     </div>
-  </div>
+
+    <div class="project" id="proj2">
+      <img class="projectImg" src="./assets/images/dayScheduler.png" alt="day planner" width="400" height="400">
+      <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+        This content is a little bit longer.</p> -->
+    </div>
+
+    <div class="project" id="proj3">
+      <img class="projectImg" src="./assets/images/dayScheduler.png" alt="day planner" width="200" height="200">
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+        This content is a little bit longer.</p>
+    </div>
+
+    <div class="project" id="proj3">
+      <img class="projectImg" src="./assets/images/dayScheduler.png" alt="day planner" width="200" height="200">
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+        This content is a little bit longer.</p>
+    </div>
+
+  </section>
 
   <!-- contact me -->
-
-  <div class="container" id="contactMe">
+  <section id="contact">
+    <label>contact me</label>
     <form>
-      <div class="row">
-        <div class="six columns">
-          <label for="exampleEmailInput">Your email</label>
-          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-        </div>
-        <div class="six columns">
-          <label for="exampleRecipientInput">Reason for contacting</label>
-          <select class="u-full-width" id="exampleRecipientInput">
-            <option value="Option 1">Questions</option>
-            <option value="Option 2">Admiration</option>
-            <option value="Option 3">Can I get your number?</option>
-          </select>
-        </div>
+      <div class="mb-3">
+        <label for="emailAdress" class="form-label">eMail address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
-      <label for="exampleMessage">Message</label>
-      <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-      <label class="example-send-yourself-copy">
-        <input type="checkbox">
-        <span class="label-body">Send a copy to yourself</span>
-      </label>
-      <input class="button-primary" type="submit" value="Submit">
+      <div class="mb-3">
+        <label for="message" class="form-label">message</label>
+        <textarea class="form-control" id="messageText" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-  </div>
-
+  </section>
+</div>
   <script src="./assets/js/script.js"></script>
 </body>
 
